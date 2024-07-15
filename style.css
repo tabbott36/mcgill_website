@@ -1,0 +1,443 @@
+:root {
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #c3c5c9ff;
+  --dl-size-size-unit: 1rem;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-color-pimary-300: #0284c7ff;
+  --dl-color-pimary-500: #4aa4e3ff;
+  --dl-color-pimary-700: #c3e5faff;
+  --dl-color-pimary-800: #e3e8efff;
+  --dl-color-pimary-900: #f2f5f9ff;
+  --dl-space-space-unit: 1rem;
+  --dl-size-size-halfunit: 0.5rem;
+  --dl-color-secondary-100: #111729ff;
+  --dl-color-secondary-300: #1e293bff;
+  --dl-color-secondary-400: #334155ff;
+  --dl-color-secondary-500: #677b8eff;
+  --dl-color-secondary-700: #94a3b8ff;
+  --dl-color-theme-accent1: #F3E8E2;
+  --dl-color-theme-accent2: #D8BFAF;
+  --dl-radius-radius-round: 50%;
+  --dl-color-theme-primary1: #D1510A;
+  --dl-color-theme-primary2: #923A06;
+  --dl-size-size-doubleunit: 2rem;
+  --dl-size-size-tripleunit: 3rem;
+  --dl-space-space-halfunit: 0.5rem;
+  --dl-radius-radius-radius4: 4px;
+  --dl-space-space-fiveunits: 5rem;
+  --dl-color-theme-secondary1: #F3E8E2;
+  --dl-color-theme-secondary2: #E0D1CB;
+  --dl-radius-radius-radius25: 0.25rem;
+  --dl-radius-radius-radius50: 0.5rem;
+  --dl-radius-radius-radius75: 0.75rem;
+  --dl-space-space-doubleunit: 2rem;
+  --dl-space-space-tripleunit: 3rem;
+  --dl-space-space-twoandhalf: 2.5rem;
+  --dl-space-space-unitandhalf: 1.5rem;
+  --dl-color-theme-neutral-dark: #191818;
+  --dl-radius-radius-cardradius: 8px;
+  --dl-color-theme-neutral-light: #FBFAF9;
+  --dl-radius-radius-imageradius: 8px;
+  --dl-radius-radius-inputradius: 24px;
+  --dl-space-space-triplequarter: 0.75rem;
+  --dl-radius-radius-buttonradius: 24px;
+}
+.teleport-show {
+  display: flex !important;
+  transform: none !important;
+}
+.list {
+  width: 100%;
+  margin: 1em 0px 1em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+.list-item {
+  display: list-item;
+}
+.button {
+  color: var(--dl-color-gray-900);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  border-color: var(--dl-color-gray-900);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.textarea {
+  color: var(--dl-color-gray-900);
+  cursor: auto;
+  padding: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  border-color: var(--dl-color-gray-900);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.input {
+  color: var(--dl-color-gray-900);
+  cursor: auto;
+  padding: 0.5rem 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  border-color: var(--dl-color-gray-900);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.thq-input {
+  color: var(--dl-color-theme-neutral-dark);
+  cursor: auto;
+  padding: 0.5rem 1rem;
+  align-self: stretch;
+  text-align: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-inputradius);
+  background-color: var(--dl-color-theme-neutral-light);
+}
+.thq-button-filled {
+  color: var(--dl-color-theme-secondary1);
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: Noto Sans;
+  font-weight: bold;
+  padding-top: var(--dl-space-space-halfunit);
+  white-space: nowrap;
+  border-color: var(--dl-color-theme-primary1);
+  border-radius: var(--dl-radius-radius-buttonradius);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: var(--dl-color-theme-primary1);
+}
+.thq-button-filled:hover {
+  color: var(--dl-color-theme-secondary2);
+  border-color: var(--dl-color-theme-primary2);
+  background-color: var(--dl-color-theme-primary2);
+}
+.thq-button-outline {
+  fill: var(--dl-color-theme-primary1);
+  color: var(--dl-color-theme-primary1);
+  border: 1px solid;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+  padding-top: var(--dl-space-space-halfunit);
+  white-space: nowrap;
+  border-color: var(--dl-color-theme-primary1);
+  border-radius: var(--dl-radius-radius-buttonradius);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.thq-button-outline:hover {
+  fill: var(--dl-color-theme-secondary2);
+  color: var(--dl-color-theme-secondary2);
+  background-color: var(--dl-color-theme-primary2);
+}
+.thq-button-flat {
+  gap: var(--dl-space-space-halfunit);
+  fill: var(--dl-color-theme-primary1);
+  color: var(--dl-color-theme-primary1);
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  font-family: Noto Sans;
+  font-weight: bold;
+  padding-top: var(--dl-space-space-halfunit);
+  border-radius: var(--dl-radius-radius-buttonradius);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.thq-button-flat:hover {
+  fill: var(--dl-color-theme-secondary1);
+  color: var(--dl-color-theme-secondary1);
+  border-color: var(--dl-color-theme-primary2);
+  background-color: var(--dl-color-theme-primary2);
+}
+.thq-heading-1 {
+  font-size: 48px;
+  font-family: STIX Two Text;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.thq-heading-2 {
+  font-size: 35px;
+  font-family: STIX Two Text;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.thq-heading-3 {
+  font-size: 26px;
+  font-family: STIX Two Text;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.thq-body-large {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.thq-body-small {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.thq-team-image-round {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.thq-section-padding {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-fiveunits);
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.thq-section-max-width {
+  width: 100%;
+}
+.thq-img-ratio-1-1 {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: var(--dl-radius-radius-imageradius);
+}
+.thq-img-ratio-16-9 {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  border-radius: var(--dl-radius-radius-imageradius);
+}
+.thq-img-ratio-4-3 {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  border-radius: var(--dl-radius-radius-imageradius);
+}
+.thq-img-ratio-4-6 {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/6;
+  border-radius: var(--dl-radius-radius-imageradius);
+}
+.thq-img-round {
+  width: 100%;
+  border-radius: var(--dl-radius-radius-round);
+}
+.thq-flex-column {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.thq-flex-row {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+}
+.thq-grid-6 {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.thq-grid-5 {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.thq-card {
+  display: flex;
+  align-items: stretch;
+  border-radius: var(--dl-radius-radius-cardradius);
+  flex-direction: column;
+}
+.thq-box-shadow {
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+}
+.thq-grid-3 {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.thq-grid-4 {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.thq-grid-2 {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.thq-select {
+  cursor: pointer;
+  appearance: none;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-inputradius);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: var(--dl-color-theme-neutral-light);
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg width%3D%2220%22 height%3D%2220%22 xmlns%3D%22http%3A//www.w3.org/2000/svg%22 viewBox%3D%220 0 20 20%22 fill%3D%22%23000%22%3E%3Cpath d%3D%22M4.293 7.293a1 1 0 011.414 0L10 11.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+.thq-divider-horizontal {
+  width: 100%;
+  height: 1px;
+  background-color: var(--dl-color-theme-neutral-dark);
+}
+.thq-icon-small {
+  width: 24px;
+  height: 24px;
+}
+.thq-button-icon {
+  fill: var(--dl-color-theme-secondary1);
+  padding: var(--dl-space-space-halfunit);
+  transition: 0.3s;
+  font-family: Noto Sans;
+  border-radius: var(--dl-radius-radius-buttonradius);
+}
+.thq-button-icon:hover {
+  fill: var(--dl-color-theme-secondary2);
+}
+
+
+.thq-link {
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+.thq-link:hover {
+  opacity: 0.8;
+}
+.thq-input::placeholder {
+  text-align: center;
+  vertical-align: middle;
+}
+.Healine {
+  font-size: 1.875rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  text-decoration: none;
+}
+.TextXL {
+  font-size: 1.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+}
+.TextSM {
+  font-size: 0.87rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  text-decoration: none;
+}
+.TextXS {
+  font-size: 0.75rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  text-decoration: none;
+}
+.Content {
+  font-size: 1.12rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  line-height: 1.75;
+  text-transform: none;
+  text-decoration: none;
+}
+.TextMD {
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
+  text-decoration: none;
+}
+.Text2XL {
+  font-size: 2.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: none;
+  text-decoration: none;
+}
+.Text3XL {
+  font-size: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  text-decoration: none;
+}
+.TextLG {
+  font-size: 1.125rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  text-decoration: none;
+}
+@media(max-width: 991px) {
+  .thq-flex-row {
+    flex-direction: column;
+  }
+  .thq-grid-4 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(max-width: 767px) {
+  .thq-grid-6 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .thq-grid-5 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .thq-grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .thq-grid-4 {
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+  }
+  .thq-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+@media(max-width: 479px) {
+  .thq-flex-column {
+    gap: var(--dl-space-space-unit);
+  }
+  .thq-flex-row {
+    gap: var(--dl-space-space-unit);
+  }
+  .thq-grid-6 {
+    grid-gap: var(--dl-space-space-unit);
+    grid-template-columns: 1fr 1fr;
+  }
+  .thq-grid-5 {
+    grid-gap: var(--dl-space-space-unit);
+    grid-template-columns: 1fr 1fr;
+  }
+  .thq-grid-3 {
+    grid-gap: var(--dl-space-space-unit);
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+  .thq-grid-4 {
+    grid-gap: var(--dl-space-space-unit);
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  .thq-grid-2 {
+    grid-gap: var(--dl-space-space-unit);
+  }
+}
