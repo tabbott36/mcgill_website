@@ -2,4 +2,6 @@
 ### Installation
 1. Clone the repo to your local machine
 2. Develop if wanted
-3. rsync -r mcgill_website/ USERNAME@calys.physics.mcgill.ca:~/WWW/
+3. ```rsync -r mcgill_website/ USERNAME@calys.physics.mcgill.ca:~/WWW/```
+4. ```ssh USERNAME@calys.physics.mcgill.ca```
+5. ```ssh himmel webpush```
