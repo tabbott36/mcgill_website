@@ -349,12 +349,24 @@
   width: 3rem;
   height: 3rem;
   display: flex;
-  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
   align-items: center;
-  border-radius: var(--dl-radius-radius-round);
-  flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(180deg, #f87171, #dc2626);
+  background-image: url("public/noun-research-paper-5782557.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.research-container4 {
+  flex: 0 0 auto;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("public/noun-presentation-7064392.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .research-icon {
   fill: var(--dl-color-gray-white);
@@ -390,23 +402,6 @@
   text-decoration: none;
   background-color: var(--dl-color-gray-white);
 }
-.research-container4 {
-  flex: 0 0 auto;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
-  align-items: center;
-  border-radius: var(--dl-radius-radius-round);
-  flex-direction: column;
-  justify-content: center;
-  background-image: linear-gradient(180deg, #38bdf8, #0284c7);
-}
-.research-icon2 {
-  fill: var(--dl-color-gray-white);
-  width: 24px;
-  height: 24px;
-}
 .research-text06 {
   color: var(--dl-color-secondary-100);
   margin-top: var(--dl-space-space-unit);
@@ -441,12 +436,12 @@
   width: 3rem;
   height: 3rem;
   display: flex;
-  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
   align-items: center;
-  border-radius: var(--dl-radius-radius-round);
-  flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(180deg, #38bdf8, #0284c7);
+  background-image: url("public/github_logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .research-icon4 {
   fill: var(--dl-color-gray-white);
